@@ -1,7 +1,9 @@
 body{
     font-family: 'Raleway', sans-serif;
     padding: 10px;
+    max-width: 320px;
 }
+
 
 #header_section{
     width: 320px;
@@ -741,7 +743,7 @@ footer{
 }
 
 
-/*
+
 .bg_3{
     display: flex;
     width: 757px;
@@ -756,10 +758,23 @@ footer{
 
     position: absolute;
     top: 1120px;
-    left: -150px;
+    left: -150px;   /*-150*/
+
+    clip-path: 
+    polygon(
+        0% 130px,                 /* верхняя левая */
+        350px 0%,                 /* верхняя левая */
+
+        calc(100% - 410px) 0%,    /* верхняя правая */
+        100% 1200px,               /* верхняя правая */
+
+        267px 100%,               /* нижняя левая */
+        0 calc(100% - 767px)      /* нижняя левая */
+    );
 }
 
 
+/*
 .bg_4_slash{
     display: flex;
     width: 350px;
@@ -771,4 +786,3 @@ footer{
     z-index: 5;
 }
 */
-
